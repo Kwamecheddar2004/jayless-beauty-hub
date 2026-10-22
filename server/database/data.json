@@ -1,0 +1,643 @@
+{
+  "services": [
+    {
+      "id": "srv_1",
+      "name": "Full Glam Makeup",
+      "category": "Makeup",
+      "description": "Flawless foundation, dramatic contouring, cut crease/glitter eyeshadow, & luxury mink lashes.",
+      "price": 250,
+      "priceDisplay": "₵250",
+      "duration": 60,
+      "image": "images/services/makeup.jpg",
+      "fallbackImage": "images/services/makeup.jpg",
+      "popular": true
+    },
+    {
+      "id": "srv_2",
+      "name": "Soft Glam Makeup",
+      "category": "Makeup",
+      "description": "Subtle, natural glowing look with soft eyeshadow tones, light highlight, & neutral lips.",
+      "price": 180,
+      "priceDisplay": "₵180",
+      "duration": 45,
+      "image": "images/services/makeup.jpg",
+      "fallbackImage": "images/services/makeup.jpg",
+      "popular": false
+    },
+    {
+      "id": "srv_3",
+      "name": "Bridal Glam Package",
+      "category": "Makeup",
+      "description": "Exclusive consultation, trial session, long-lasting luxury bridal makeup with setting spray.",
+      "price": 600,
+      "priceDisplay": "₵600",
+      "duration": 90,
+      "image": "images/services/makeup.jpg",
+      "fallbackImage": "images/services/makeup.jpg",
+      "popular": true
+    },
+    {
+      "id": "srv_braiding",
+      "name": "Braiding",
+      "category": "Hair",
+      "description": "Painless, neat, high-quality braiding styles including knotless braids, cornrows, & goddess braids.",
+      "price": 100,
+      "priceDisplay": "From ₵100",
+      "duration": 180,
+      "image": "images/services/braiding.jpg",
+      "fallbackImage": "images/services/braiding.jpg",
+      "popular": true
+    },
+    {
+      "id": "srv_pedicure",
+      "name": "Pedicure",
+      "category": "Nails",
+      "description": "Botanical foot soak, exfoliating scrub, heel softening, soothing foot massage, & gel polish application.",
+      "price": 80,
+      "priceDisplay": "Girls ₵80 | Boys ₵100",
+      "duration": 50,
+      "image": "images/services/pedicure.jpg",
+      "fallbackImage": "images/services/pedicure.jpg",
+      "popular": true
+    },
+    {
+      "id": "srv_wig_install",
+      "name": "Wig Installation",
+      "category": "Hair",
+      "description": "Frontal or closure wig customization, plucking, bleaching knots, melt installation & sleek styling.",
+      "price": 100,
+      "priceDisplay": "From ₵100",
+      "duration": 120,
+      "image": "images/services/wig_install.jpg",
+      "fallbackImage": "images/services/wig_install.jpg",
+      "popular": true
+    },
+    {
+      "id": "srv_washing",
+      "name": "Washing (Natural & Permed)",
+      "category": "Hair",
+      "description": "Deep cleansing scalp wash & moisture conditioning treatment for natural and permed hair.",
+      "price": 25,
+      "priceDisplay": "Natural ₵25 | Permed ₵20",
+      "duration": 40,
+      "image": "images/services/hair_wash.jpg",
+      "fallbackImage": "images/services/hair_wash.jpg",
+      "popular": false
+    },
+    {
+      "id": "srv_lash_ext",
+      "name": "Lash Extension",
+      "category": "Lashes & Brows",
+      "description": "Lightweight classic, hybrid, or volume lash extensions for gorgeous, dramatic eye enhancement.",
+      "price": 70,
+      "priceDisplay": "₵70 - ₵150",
+      "duration": 60,
+      "image": "images/services/lash_extensions.jpg",
+      "fallbackImage": "images/services/lash_extensions.jpg",
+      "popular": true
+    },
+    {
+      "id": "srv_ombre_brows",
+      "name": "Ombre Brows",
+      "category": "Lashes & Brows",
+      "description": "Semi-permanent powder brows giving a soft-shaded pencil look that lasts up to 2-3 years.",
+      "price": 300,
+      "priceDisplay": "₵300",
+      "duration": 90,
+      "image": "images/services/ombre_brows.jpg",
+      "fallbackImage": "images/services/ombre_brows.jpg",
+      "popular": true
+    },
+    {
+      "id": "srv_4",
+      "name": "Acrylic Full Set (Gel)",
+      "category": "Nails",
+      "description": "High-quality acrylic extensions with gel polish finish, custom shape (coffin, almond, square).",
+      "price": 150,
+      "priceDisplay": "₵150",
+      "duration": 75,
+      "image": "images/services/nails.jpg",
+      "fallbackImage": "images/services/nails.jpg",
+      "popular": true
+    },
+    {
+      "id": "srv_6",
+      "name": "Gel Manicure & Nail Art",
+      "category": "Nails",
+      "description": "Cuticle care, nail shaping, durable gel polish with custom hand-painted nail designs.",
+      "price": 100,
+      "priceDisplay": "₵100",
+      "duration": 45,
+      "image": "images/services/nails.jpg",
+      "fallbackImage": "images/services/nails.jpg",
+      "popular": false
+    },
+    {
+      "id": "srv_8",
+      "name": "Silk Press & Treatment",
+      "category": "Hair",
+      "description": "Deep conditioning steam treatment, blowout, & silky straight flat iron press.",
+      "price": 200,
+      "priceDisplay": "₵200",
+      "duration": 90,
+      "image": "images/services/hair.jpg",
+      "fallbackImage": "images/services/hair.jpg",
+      "popular": false
+    }
+  ],
+  "bookings": [
+    {
+      "id": "bk_1789935622824",
+      "booking_ref": "JBH-4889",
+      "client_name": "samuel kwame bonsu",
+      "client_email": "skwamebonsu@gmail.com",
+      "client_phone": "65758786",
+      "appointment_date": "2026-09-20",
+      "appointment_time": "06:00 PM",
+      "stylist_preference": "Any Available Specialist",
+      "services": [
+        {
+          "id": "srv_1",
+          "name": "Full Glam Makeup",
+          "category": "Makeup",
+          "price": 250,
+          "duration": 60
+        }
+      ],
+      "raw_total": 250,
+      "discount_applied": 0,
+      "total_price": 250,
+      "total_duration": 60,
+      "payment_method": "Pay at Salon",
+      "payment_status": "Pending Deposit",
+      "status": "Completed",
+      "notes": "",
+      "created_at": "2026-09-20T20:20:22.824Z"
+    },
+    {
+      "id": "bk_1789935555904",
+      "booking_ref": "JBH-3671",
+      "client_name": "Test Client",
+      "client_email": "test@example.com",
+      "client_phone": "0241234567",
+      "appointment_date": "2026-09-25",
+      "appointment_time": "03:00 PM",
+      "stylist_preference": "Any Available Specialist",
+      "services": [
+        {
+          "id": "srv_1",
+          "name": "Full Glam Makeup",
+          "category": "Makeup",
+          "price": 250,
+          "duration": 60
+        }
+      ],
+      "raw_total": 250,
+      "discount_applied": 0,
+      "total_price": 250,
+      "total_duration": 60,
+      "payment_method": "Pay at Salon",
+      "payment_status": "Pending Deposit",
+      "status": "Completed",
+      "notes": "",
+      "created_at": "2026-09-20T20:19:15.904Z"
+    },
+    {
+      "id": "bk_1789935489696",
+      "booking_ref": "JBH-9082",
+      "client_name": "samuel kwame bonsu",
+      "client_email": "skwamebonsu@gmail.com",
+      "client_phone": "65758786",
+      "appointment_date": "2026-09-20",
+      "appointment_time": "01:30 PM",
+      "stylist_preference": "Nana (Braids & Facial Expert)",
+      "services": [
+        {
+          "id": "srv_1",
+          "name": "Full Glam Makeup",
+          "category": "Makeup",
+          "price": 250,
+          "duration": 60
+        }
+      ],
+      "raw_total": 250,
+      "discount_applied": 0,
+      "total_price": 250,
+      "total_duration": 60,
+      "payment_method": "Pay at Salon",
+      "payment_status": "Pending Deposit",
+      "status": "Completed",
+      "notes": "",
+      "created_at": "2026-09-20T20:18:09.696Z"
+    },
+    {
+      "id": "bk_1789935400938",
+      "booking_ref": "JBH-9128",
+      "client_name": "Ama Serwaa",
+      "client_email": "ama@example.com",
+      "client_phone": "0241234567",
+      "appointment_date": "2026-09-25",
+      "appointment_time": "02:00 PM",
+      "stylist_preference": "Any Available Specialist",
+      "services": [
+        {
+          "id": "srv_1",
+          "name": "Full Glam Makeup",
+          "category": "Makeup",
+          "price": 250,
+          "duration": 60
+        }
+      ],
+      "raw_total": 250,
+      "discount_applied": 0,
+      "total_price": 250,
+      "total_duration": 60,
+      "payment_method": "Pay at Salon",
+      "payment_status": "Pending Deposit",
+      "status": "Completed",
+      "notes": "",
+      "created_at": "2026-09-20T20:16:40.938Z"
+    },
+    {
+      "id": "bk_1789934986527",
+      "booking_ref": "JBH-4898",
+      "client_name": "mama",
+      "client_email": "skb@gmail.com",
+      "client_phone": "0241837984",
+      "appointment_date": "2026-09-20",
+      "appointment_time": "12:00 PM",
+      "stylist_preference": "Any Available Specialist",
+      "services": [
+        {
+          "id": "srv_1",
+          "name": "Full Glam Makeup",
+          "category": "Makeup",
+          "price": 250,
+          "duration": 60
+        }
+      ],
+      "raw_total": 250,
+      "discount_applied": 0,
+      "total_price": 250,
+      "total_duration": 60,
+      "payment_method": "Pay at Salon",
+      "payment_status": "Pending Deposit",
+      "status": "Confirmed",
+      "notes": "NAILS",
+      "created_at": "2026-09-20T20:09:46.527Z"
+    },
+    {
+      "id": "bk_1789934047821",
+      "booking_ref": "JBH-6305",
+      "client_name": "yaw",
+      "client_email": "jsakkajnd@gmail.com",
+      "client_phone": "0599052050",
+      "appointment_date": "2026-09-20",
+      "appointment_time": "06:00 PM",
+      "stylist_preference": "Any Available Specialist",
+      "services": [
+        {
+          "id": "srv_1",
+          "name": "Full Glam Makeup",
+          "category": "Makeup",
+          "price": 250,
+          "duration": 60
+        },
+        {
+          "id": "srv_braiding",
+          "name": "Braiding",
+          "category": "Hair",
+          "price": 100,
+          "duration": 180
+        }
+      ],
+      "raw_total": 350,
+      "discount_applied": 35,
+      "total_price": 315,
+      "total_duration": 240,
+      "payment_method": "Pay at Salon",
+      "payment_status": "Pending Deposit",
+      "status": "Completed",
+      "notes": "polish",
+      "created_at": "2026-09-20T19:54:07.821Z"
+    },
+    {
+      "id": "bk_1789933839451",
+      "booking_ref": "JBH-2507",
+      "client_name": "Abena Serwaa",
+      "client_email": "abena@example.com",
+      "client_phone": "0241234567",
+      "appointment_date": "2026-09-25",
+      "appointment_time": "11:00 AM",
+      "stylist_preference": "Any Available Specialist",
+      "services": [
+        {
+          "id": "srv_1",
+          "name": "Full Glam Makeup",
+          "category": "Makeup",
+          "price": 250,
+          "duration": 60
+        }
+      ],
+      "raw_total": 250,
+      "discount_applied": 0,
+      "total_price": 250,
+      "total_duration": 60,
+      "payment_method": "Pay at Salon",
+      "payment_status": "Pending Deposit",
+      "status": "Confirmed",
+      "notes": "First time client",
+      "created_at": "2026-09-20T19:50:39.451Z"
+    },
+    {
+      "id": "bk_1789328478748",
+      "booking_ref": "JBH-9174",
+      "client_name": "oge",
+      "client_email": "khdkythdcyk@gmail.com",
+      "client_phone": "9758965976",
+      "appointment_date": "2026-09-13",
+      "appointment_time": "06:00 PM",
+      "stylist_preference": "Any Available Specialist",
+      "services": [
+        {
+          "id": "srv_3",
+          "name": "Bridal Glam Package",
+          "category": "Makeup",
+          "price": 600,
+          "duration": 90
+        }
+      ],
+      "raw_total": 600,
+      "discount_applied": 0,
+      "total_price": 600,
+      "total_duration": 90,
+      "payment_method": "Pay at Salon",
+      "payment_status": "Pending Deposit",
+      "status": "Confirmed",
+      "notes": "",
+      "created_at": "2026-09-13T19:41:18.748Z"
+    },
+    {
+      "id": "bk_1789306434837",
+      "booking_ref": "JBH-7700",
+      "client_name": "oge",
+      "client_email": "khdkythdcyk@gmail.com",
+      "client_phone": "9758965976",
+      "appointment_date": "2026-09-13",
+      "appointment_time": "01:30 PM",
+      "stylist_preference": "Any Available Specialist",
+      "services": [
+        {
+          "id": "srv_1",
+          "name": "Full Glam Makeup",
+          "category": "Makeup",
+          "price": 250,
+          "duration": 60
+        },
+        {
+          "id": "srv_3",
+          "name": "Bridal Glam Package",
+          "category": "Makeup",
+          "price": 600,
+          "duration": 90
+        }
+      ],
+      "raw_total": 850,
+      "discount_applied": 85,
+      "total_price": 765,
+      "total_duration": 150,
+      "payment_method": "Pay at Salon",
+      "payment_status": "Pending Deposit",
+      "status": "Confirmed",
+      "notes": "",
+      "created_at": "2026-09-13T13:33:54.837Z"
+    },
+    {
+      "id": "bk_1789306041087",
+      "booking_ref": "JBH-4844",
+      "client_name": "nana",
+      "client_email": "kmklmkamnka@gmail.com",
+      "client_phone": "93489820982",
+      "appointment_date": "2026-09-13",
+      "appointment_time": "01:30 PM",
+      "stylist_preference": "Any Available Specialist",
+      "services": [
+        {
+          "id": "srv_1",
+          "name": "Full Glam Makeup",
+          "category": "Makeup",
+          "price": 250,
+          "duration": 60
+        },
+        {
+          "id": "srv_3",
+          "name": "Bridal Glam Package",
+          "category": "Makeup",
+          "price": 600,
+          "duration": 90
+        },
+        {
+          "id": "srv_2",
+          "name": "Soft Glam Makeup",
+          "category": "Makeup",
+          "price": 180,
+          "duration": 45
+        }
+      ],
+      "raw_total": 1030,
+      "discount_applied": 103,
+      "total_price": 927,
+      "total_duration": 195,
+      "payment_method": "Pay at Salon",
+      "payment_status": "Pending Deposit",
+      "status": "Confirmed",
+      "notes": "",
+      "created_at": "2026-09-13T13:27:21.087Z"
+    },
+    {
+      "id": "bk_1789305935851",
+      "booking_ref": "JBH-1875",
+      "client_name": "Kofi Mensah",
+      "client_email": "kofi@example.com",
+      "client_phone": "+233501234567",
+      "appointment_date": "2026-09-16",
+      "appointment_time": "02:00 PM",
+      "stylist_preference": "Jessica",
+      "services": [
+        {
+          "id": "srv_ombre_brows",
+          "name": "Ombre Brows",
+          "category": "Lashes & Brows",
+          "price": 300,
+          "duration": 90
+        },
+        {
+          "id": "srv_lash_ext",
+          "name": "Lash Extension",
+          "category": "Lashes & Brows",
+          "price": 70,
+          "duration": 60
+        }
+      ],
+      "raw_total": 370,
+      "discount_applied": 37,
+      "total_price": 333,
+      "total_duration": 150,
+      "payment_method": "MTN Mobile Money",
+      "payment_status": "Paid",
+      "status": "Confirmed",
+      "notes": "",
+      "created_at": "2026-09-13T13:25:35.852Z"
+    },
+    {
+      "id": "bk_1789305896491",
+      "booking_ref": "JBH-1257",
+      "client_name": "Akosua Mansah",
+      "client_email": "akosua@example.com",
+      "client_phone": "+233249876543",
+      "appointment_date": "2026-09-15",
+      "appointment_time": "10:30 AM",
+      "stylist_preference": "Nana",
+      "services": [
+        {
+          "id": "srv_braiding",
+          "name": "Braiding",
+          "category": "Hair",
+          "price": 100,
+          "duration": 180
+        },
+        {
+          "id": "srv_pedicure",
+          "name": "Pedicure",
+          "category": "Nails",
+          "price": 80,
+          "duration": 50
+        }
+      ],
+      "raw_total": 180,
+      "discount_applied": 18,
+      "total_price": 162,
+      "total_duration": 230,
+      "payment_method": "Pay at Salon",
+      "payment_status": "Pending Deposit",
+      "status": "Confirmed",
+      "notes": "",
+      "created_at": "2026-09-13T13:24:56.491Z"
+    },
+    {
+      "id": "bk_1789305582840",
+      "booking_ref": "JBH-8734",
+      "client_name": "kofi",
+      "client_email": "kofi@gmail.com",
+      "client_phone": "0246281419",
+      "appointment_date": "2026-09-13",
+      "appointment_time": "06:00 PM",
+      "stylist_preference": "Any Available Specialist",
+      "services": [
+        {
+          "id": "srv_1",
+          "name": "Full Glam Makeup",
+          "category": "Makeup",
+          "price": 250,
+          "duration": 60
+        },
+        {
+          "id": "srv_braiding",
+          "name": "Braiding",
+          "category": "Hair",
+          "price": 100,
+          "duration": 180
+        }
+      ],
+      "raw_total": 350,
+      "discount_applied": 35,
+      "total_price": 315,
+      "total_duration": 240,
+      "payment_method": "Pay at Salon",
+      "payment_status": "Pending Deposit",
+      "status": "Confirmed",
+      "notes": "",
+      "created_at": "2026-09-13T13:19:42.840Z"
+    },
+    {
+      "id": "bk_1789305485110",
+      "booking_ref": "JBH-5057",
+      "client_name": "AUTY FREMAH",
+      "client_email": "skwamebonsu@gmail.com",
+      "client_phone": "0241837093",
+      "appointment_date": "2026-09-13",
+      "appointment_time": "06:00 PM",
+      "stylist_preference": "Any Available Specialist",
+      "services": [
+        {
+          "id": "srv_8",
+          "name": "Silk Press & Treatment",
+          "category": "Hair",
+          "price": 200,
+          "duration": 90
+        },
+        {
+          "id": "srv_ombre_brows",
+          "name": "Ombre Brows",
+          "category": "Lashes & Brows",
+          "price": 300,
+          "duration": 90
+        }
+      ],
+      "raw_total": 500,
+      "discount_applied": 50,
+      "total_price": 450,
+      "total_duration": 180,
+      "payment_method": "Pay at Salon",
+      "payment_status": "Pending Deposit",
+      "status": "Confirmed",
+      "notes": "NAILS",
+      "created_at": "2026-09-13T13:18:05.110Z"
+    },
+    {
+      "id": "bk_1788535899669",
+      "booking_ref": "JBH-8885",
+      "client_name": "Ama Serwaa",
+      "client_email": "ama@example.com",
+      "client_phone": "+233241234567",
+      "appointment_date": "2026-09-10",
+      "appointment_time": "10:00 AM",
+      "stylist_preference": "Any Available Specialist",
+      "services": [
+        {
+          "id": "srv_1",
+          "name": "Full Glam Makeup",
+          "category": "Makeup",
+          "price": 250,
+          "duration": 60
+        },
+        {
+          "id": "srv_4",
+          "name": "Acrylic Full Set (Gel)",
+          "category": "Nails",
+          "price": 150,
+          "duration": 75
+        }
+      ],
+      "raw_total": 400,
+      "discount_applied": 40,
+      "total_price": 360,
+      "total_duration": 135,
+      "payment_method": "MTN Mobile Money",
+      "payment_status": "Paid",
+      "status": "Confirmed",
+      "notes": "",
+      "created_at": "2026-09-04T15:31:39.669Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr_admin",
+      "name": "Jayless Beauty Manager",
+      "email": "admin@jaylessbeautyhub.com",
+      "password": "$2b$10$eUt3UJWtOBq3pRVTgCJi9e1fL5hjr7NsS2nM3NF4v0B8M4sxVALia",
+      "role": "admin"
+    }
+  ],
+  "inquiries": []
+}

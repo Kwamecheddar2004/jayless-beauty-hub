@@ -1,0 +1,648 @@
+/* ==========================================================================
+   JAYLESS BEAUTY HUB - MULTI-SERVICE BOOKING SYSTEM STYLESHEET
+   ========================================================================== */
+
+/* Multi-step progress bar */
+.booking-progress-container {
+  margin-bottom: 40px;
+}
+
+.booking-progress-bar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.booking-progress-bar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background: #E0E0E0;
+  z-index: 1;
+}
+
+.progress-line-fill {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-gold) 0%, var(--rose-gold) 100%);
+  z-index: 1;
+  transition: width 0.4s ease;
+  width: 25%;
+}
+
+.progress-step-item {
+  position: relative;
+  z-index: 2;
+  background: var(--champagne-light);
+  padding: 0 10px;
+  text-align: center;
+}
+
+.step-bubble {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 3px solid #CCCCCC;
+  color: #888888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: 0 auto 8px;
+  transition: var(--transition-fast);
+}
+
+.progress-step-item.active .step-bubble {
+  border-color: var(--primary-gold);
+  background: var(--velvet-plum);
+  color: var(--primary-gold);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+.progress-step-item.completed .step-bubble {
+  border-color: var(--primary-gold);
+  background: var(--primary-gold);
+  color: var(--velvet-plum);
+}
+
+.step-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.progress-step-item.active .step-label {
+  color: var(--velvet-plum);
+  font-weight: 700;
+}
+
+/* Category Filter Tabs */
+.service-cat-filter {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.cat-filter-btn {
+  background: #FFFFFF;
+  border: 1px solid #E2E2E2;
+  color: var(--text-primary);
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.cat-filter-btn:hover,
+.cat-filter-btn.active {
+  background: var(--velvet-plum);
+  color: var(--primary-gold);
+  border-color: var(--velvet-plum);
+}
+
+/* Multi-Select Service Cards */
+.multi-service-card {
+  background: #FFFFFF;
+  border: 2px solid #EBEBEB;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: var(--transition-fast);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.multi-service-card:hover {
+  border-color: var(--rose-gold);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.multi-service-card.selected {
+  border-color: var(--primary-gold);
+  background: rgba(212, 175, 55, 0.04);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.15);
+}
+
+.multi-service-img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  flex-shrink: 0;
+}
+
+.service-checkbox-wrap {
+  position: relative;
+}
+
+.custom-checkbox {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #CCC;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  transition: var(--transition-fast);
+}
+
+.multi-service-card.selected .custom-checkbox {
+  background: var(--primary-gold);
+  border-color: var(--primary-gold);
+  color: var(--velvet-plum);
+}
+
+.service-info-meta {
+  flex-grow: 1;
+}
+
+.service-info-meta h5 {
+  font-size: 1.1rem;
+  color: var(--velvet-plum);
+  margin-bottom: 4px;
+}
+
+.service-info-meta p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.service-price-tag {
+  text-align: right;
+}
+
+.price-num {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--velvet-plum);
+  display: block;
+}
+
+.duration-tag {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Sticky Booking Summary Cart Sidebar */
+.booking-summary-card {
+  background: var(--velvet-plum);
+  color: #FFFFFF;
+  border-radius: var(--radius-md);
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(44, 14, 30, 0.3);
+  position: sticky;
+  top: 100px;
+  border: 1px solid var(--glass-border);
+}
+
+.summary-title {
+  color: var(--primary-gold);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.selected-services-list {
+  list-style: none;
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding-right: 5px;
+}
+
+.selected-services-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #DDD;
+}
+
+.summary-total {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-gold);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.combo-discount-tag {
+  background: rgba(212, 175, 55, 0.2);
+  color: var(--primary-gold);
+  border: 1px solid var(--primary-gold);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Step 2: Date & Stylist */
+.stylist-option-card {
+  background: #FFFFFF;
+  border: 2px solid #EBEBEB;
+  border-radius: var(--radius-md);
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.stylist-option-card:hover,
+.stylist-option-card.selected {
+  border-color: var(--primary-gold);
+  background: rgba(212, 175, 55, 0.05);
+}
+
+.time-slot-btn {
+  background: #FFFFFF;
+  border: 1px solid #DDD;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.time-slot-btn:hover,
+.time-slot-btn.selected {
+  background: var(--velvet-plum);
+  color: var(--primary-gold);
+  border-color: var(--velvet-plum);
+}
+
+/* Active Booking Banner */
+#activeBookingAlert {
+  background: #FFFDF5;
+  border: 1px solid var(--primary-gold);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+  animation: fadeInDown 0.4s ease;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Printable Receipt Media Query */
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  .modal-backdrop {
+    display: none !important;
+  }
+  .modal {
+    position: static !important;
+    display: block !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+  .modal-dialog {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  .modal-content {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+  .modal-header,
+  .modal-footer,
+  .photo-callout-banner,
+  .no-print,
+  nav,
+  footer,
+  header,
+  .navbar,
+  .booking-progress-container,
+  .col-lg-4,
+  #activeBookingAlert,
+  .alert,
+  .btn {
+    display: none !important;
+  }
+  .modal-body {
+    padding: 0 !important;
+    background: transparent !important;
+  }
+  #modalReceiptArea,
+  #modalReceiptArea *,
+  #printableReceiptCard,
+  #printableReceiptCard * {
+    visibility: visible !important;
+  }
+  .receipt-paper {
+    position: relative !important;
+    box-shadow: none !important;
+    border: 2px solid #000000 !important;
+    background: #FFFFFF !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+  }
+}
+
+/* ==========================================================================
+   PHOTO-READY OFFICIAL SALON BOOKING RECEIPT STYLES
+   ========================================================================== */
+
+.photo-callout-banner {
+  background: linear-gradient(135deg, #1A1A1A 0%, #2D2310 100%);
+  border: 2px dashed var(--primary-gold);
+  color: #FFFFFF;
+}
+
+.receipt-card-wrapper {
+  background: transparent;
+}
+
+.receipt-paper {
+  background: #FFFFFF;
+  border: 2px solid var(--primary-gold);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  color: #1A1A1A;
+}
+
+/* Luxury Header */
+.receipt-brand-logo {
+  height: 52px;
+  width: auto;
+  border-radius: 6px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.receipt-brand-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: #1A1A1A;
+  letter-spacing: 1px;
+}
+
+.receipt-brand-tagline {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--primary-gold-hover);
+  letter-spacing: 1.5px;
+}
+
+.receipt-salon-contacts {
+  font-size: 0.75rem;
+}
+
+/* Reference Code Badge */
+.receipt-ref-badge {
+  background: linear-gradient(135deg, #FFF9E6 0%, #F5E6BF 100%);
+  border: 2px solid var(--primary-gold);
+  border-radius: 10px;
+  padding: 6px 14px;
+  display: inline-block;
+}
+
+.ref-small-title {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #7A5B0B;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.ref-code-number {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #1A1A1A;
+  letter-spacing: 1.5px;
+}
+
+/* Camera photo callout ribbon inside receipt */
+.receipt-photo-indicator {
+  background: #2C0E1E;
+  color: #D4AF37;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 1px solid #D4AF37;
+}
+
+/* Details Grid */
+.receipt-details-grid {
+  background: #FAF8F5;
+  border: 1px dashed #DEC89A;
+}
+
+.grid-section-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #555555;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.grid-primary-text {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1A1A1A;
+}
+
+.grid-secondary-text {
+  font-size: 0.82rem;
+  color: #444444;
+}
+
+.grid-tertiary-text {
+  font-size: 0.76rem;
+  color: #777777;
+}
+
+/* Table */
+.receipt-table {
+  font-size: 0.88rem;
+  border-color: #EFEFEF;
+}
+
+.receipt-table thead th {
+  padding: 8px 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.receipt-table tbody td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+/* Totals Box */
+.receipt-pricing-box {
+  background: #FFFFFF;
+}
+
+.receipt-total-cedis {
+  color: #B8860B;
+}
+
+/* Verification row */
+.receipt-verification-row {
+  background: #FDFCF7;
+}
+
+.receipt-qr-wrap {
+  background: #FFFFFF;
+  padding: 4px;
+  border: 1px solid #D4AF37;
+  border-radius: 8px;
+  flex-shrink: 0;
+  width: 90px;
+  text-align: center;
+}
+
+.receipt-qr-img {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Salon Gold Seal Stamp */
+.salon-gold-seal {
+  width: 82px;
+  height: 82px;
+  border: 2px dashed #D4AF37;
+  border-radius: 50%;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #FFFDF8;
+}
+
+.seal-inner {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #D4AF37;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.seal-crown {
+  font-size: 0.8rem;
+  color: #D4AF37;
+  margin-bottom: 1px;
+}
+
+.seal-text-top {
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #1A1A1A;
+}
+
+.seal-text-mid {
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #D4AF37;
+}
+
+.seal-text-bot {
+  font-size: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #666;
+}
+
+/* ==========================================================================
+   WIZARD STEP ANIMATIONS & MULTI-SELECT EFFECTS
+   ========================================================================== */
+
+@keyframes slideStepIn {
+  from {
+    opacity: 0;
+    transform: translate3d(25px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.step-animated-in {
+  animation: slideStepIn 0.45s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+/* Multi-select checkmark pop effect */
+.multi-service-card.selected .custom-checkbox i {
+  animation: popCheck 0.35s ease forwards;
+}
+
+/* Cart price change highlight */
+.price-updated {
+  animation: pulsePrice 0.4s ease;
+}
+
+@keyframes pulsePrice {
+  0% {
+    transform: scale(1);
+    color: var(--primary-gold);
+  }
+  50% {
+    transform: scale(1.15);
+    color: #FFF;
+  }
+  100% {
+    transform: scale(1);
+  }
+}

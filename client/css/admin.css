@@ -1,0 +1,89 @@
+/* ==========================================================================
+   JAYLESS BEAUTY HUB - ADMIN DASHBOARD STYLESHEET
+   ========================================================================== */
+
+.admin-header {
+  background: var(--dark-plum);
+  color: #FFFFFF;
+  padding: 30px 0;
+  border-bottom: 2px solid var(--primary-gold);
+}
+
+.stat-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+  border-left: 4px solid var(--primary-gold);
+  margin-bottom: 25px;
+}
+
+.stat-card .stat-val {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--velvet-plum);
+}
+
+.stat-card .stat-lbl {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.table-custom {
+  background: #FFFFFF;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.table-custom th {
+  background: var(--velvet-plum);
+  color: var(--primary-gold);
+  font-weight: 600;
+  padding: 16px;
+  border: none;
+}
+
+.table-custom td {
+  padding: 16px;
+  vertical-align: middle;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.status-confirmed {
+  background: #E8F5E9;
+  color: #2E7D32;
+}
+
+.status-pending {
+  background: #FFF8E1;
+  color: #F57F17;
+}
+
+.status-completed {
+  background: #E3F2FD;
+  color: #1565C0;
+}
+
+.status-cancelled {
+  background: #FFEBEE;
+  color: #C62828;
+}
+
+.badge-service-item {
+  background: #F0F0F0;
+  color: #333;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  display: inline-block;
+  margin: 2px;
+}

@@ -1,0 +1,31 @@
+/* ==========================================
+   LOGO
+========================================== */
+
+.navbar-brand img{
+
+border-radius:50%;
+
+box-shadow:0 10px 25px rgba(233,30,99,.25);
+
+}
+
+.navbar-brand h5{
+
+font-weight:700;
+
+font-size:22px;
+
+margin-bottom:2px;
+
+}
+
+.navbar-brand small{
+
+letter-spacing:2px;
+
+font-size:11px;
+
+text-transform:uppercase;
+
+}
