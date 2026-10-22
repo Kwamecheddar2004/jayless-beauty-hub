@@ -305,10 +305,6 @@ document.addEventListener('DOMContentLoaded', () => {
   paymentInputs.forEach(input => {
     input.addEventListener('change', (e) => {
       bookingState.paymentMethod = e.target.value;
-      const momoDetails = document.getElementById('momoDetailsBox');
-      if (momoDetails) {
-        momoDetails.style.display = e.target.value.includes('Mobile Money') ? 'block' : 'none';
-      }
     });
   });
 
